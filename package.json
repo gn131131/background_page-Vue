@@ -9,8 +9,12 @@
   "private": true,
   "scripts": {
     "start": "quasar dev --port 4400",
+    "start:pwa": "quasar dev -m pwa --port 4400",
     "build": "quasar build",
     "build:pwa": "quasar build -m pwa",
+    "deploy": "gh-pages -d dist/spa",
+    "analyze": "quasar build --stats-json",
+    "analyze:pwa": "quasar build -m pwa --stats-json",
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0"
   },
@@ -26,7 +30,8 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-loader": "^3.0.3",
-    "eslint-plugin-vue": "^6.1.2"
+    "eslint-plugin-vue": "^6.1.2",
+    "gh-pages": "^2.2.0"
   },
   "engines": {
     "node": ">= 10.18.1",

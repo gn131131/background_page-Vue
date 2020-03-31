@@ -1,3 +1,9 @@
+# backgroung_page-Vue
+##### Vue.js+Quasar
+##### 首页域名：www.pumpking.xyz
+##### 域名：vue.pumpking.xyz
+
+
 # Quasar App (vue)
 
 A Quasar Framework app
