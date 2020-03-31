@@ -13,6 +13,7 @@
     "build": "quasar build",
     "build:pwa": "quasar build -m pwa",
     "deploy": "gh-pages -d dist/spa",
+    "deploy:pwa": "gh-pages -d dist/pwa",
     "analyze": "quasar build --stats-json",
     "analyze:pwa": "quasar build -m pwa --stats-json",
     "lint": "eslint --ext .js,.vue src",
