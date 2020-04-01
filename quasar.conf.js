@@ -57,13 +57,12 @@ module.exports = function (ctx) {
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
-      scopeHoisting: true,
       vueRouterMode: 'history', // available values: 'hash', 'history'
 
       // rtl: false, // https://quasar.dev/options/rtl-support
       showProgress: true,
-      gzip: false,
-      analyze: false,
+      gzip: true,
+      // analyze: false,
 
       // Options below are automatically set depending on the env, set them if you want to override
       // preloadChunks: false,
