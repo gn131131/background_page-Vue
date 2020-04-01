@@ -101,7 +101,7 @@
     <q-page-container>
       <q-list class="q-ma-sm q-mt-md">
         <q-expansion-item style="border-radius: 10px" popup header-class="bg-white"
-                          v-for="mail,index in mail_data">
+                          v-for="(mail, index) in mail_data" :key="index">
           <template v-slot:header>
             <q-item-section avatar>
               <q-avatar>

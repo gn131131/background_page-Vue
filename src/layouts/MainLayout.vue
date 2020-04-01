@@ -213,7 +213,7 @@
 </template>
 
 <script>
-    import EssentialLink from 'components/EssentialLink'
+    // import EssentialLink from 'components/EssentialLink'
     import Messages from "./Messages";
 
     export default {
@@ -221,7 +221,7 @@
 
         components: {
             Messages,
-            EssentialLink
+            // EssentialLink
         },
 
         data() {

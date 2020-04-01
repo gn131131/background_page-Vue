@@ -18,7 +18,7 @@
 </template>
 
 <script>
-    import IEcharts from 'vue-echarts-v3/src/full.js'
+    // import IEcharts from 'vue-echarts-v3/src/full.js'
     import BarChart from "../components/BarChart";
     import LineChart from "../components/LineChart";
     import ScatterPlot from "../components/ScatterPlot";
@@ -32,7 +32,7 @@
             ScatterPlot,
             LineChart,
             BarChart,
-            IEcharts
+            // IEcharts
         },
         data() {
             return {
