@@ -111,7 +111,7 @@
             <q-tab-panel name="contact" class="q-pa-sm">
               <q-list class="rounded-borders" separator>
 
-                <q-item clickable v-ripple v-for="(contact, index) in contacts" :key="index">
+                <q-item clickable v-ripple v-for="(contact,index) in contacts" :key="index">
                   <q-item-section avatar>
                     <q-avatar>
                       <img :src="contact.avatar">
@@ -251,7 +251,7 @@
           <q-card-section class="">
             <q-timeline :layout="layout" :side="side" color="secondary">
 
-              <q-timeline-entry v-for="(timeline, index) in timeline_list" :key="index"
+              <q-timeline-entry v-for="(timeline,index) in timeline_list" :key="index"
                                 :title="timeline.title"
                                 :subtitle="timeline.subtitle" :color="timeline.color" :icon="timeline.icon"
                                 :side="timeline.side"
