@@ -8,8 +8,8 @@
   "author": "Pumpking <gn131131@sina.com>",
   "private": true,
   "scripts": {
-    "start": "quasar dev --port 4400",
-    "start:pwa": "quasar dev -m pwa --port 4400",
+    "start": "quasar dev",
+    "start:pwa": "quasar dev -m pwa",
     "build": "quasar build",
     "build:pwa": "quasar build -m pwa",
     "deploy": "gh-pages -d dist/spa",
