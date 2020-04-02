@@ -12,12 +12,14 @@
     "start:pwa": "quasar dev -m pwa",
     "build": "quasar build",
     "build:pwa": "quasar build -m pwa",
-    "deploy": "gh-pages -d dist/spa",
-    "deploy:pwa": "gh-pages -d dist/pwa",
+    "deploy": "yarn copy && gh-pages -d dist/spa",
+    "deploy:pwa": "yarn copy:pwa && gh-pages -d dist/pwa",
     "analyze": "quasar build --stats-json",
     "analyze:pwa": "quasar build -m pwa --stats-json",
     "lint": "eslint --ext .js,.vue src",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "copy": "cp CNAME ./dist/spa/ && cp ./dist/spa/index.html ./dist/spa/404.html",
+    "copy:pwa": "cp CNAME ./dist/pwa/ && cp ./dist/pwa/index.html ./dist/pwa/404.html"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
